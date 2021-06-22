@@ -21,7 +21,7 @@ logFile = input("Please enter name of file to be analyzed: ")
 
 # This function takes in the file the user picked 
 
-def worm_word_finder(word):
+def my_word_finder(word):
     with open(logFile) as f:
         data = f.read()
         items = re.findall(word, data)
@@ -31,7 +31,7 @@ def worm_word_finder(word):
 
 word = input("\n" 'Enter the word you wish to search for: ')
 
-count = worm_word_finder(word)
+count = my_word_finder(word)
 
 # print("\n"'The word {} has been found {} times'.format(word, count))
 
